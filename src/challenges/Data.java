@@ -6,7 +6,19 @@ public class Data {
     int month;
     int year;
 
+    Data() {
+        day = 1;
+        month = 1;
+        year = 2024;
+    }
+
+    Data (int initialDay, int initialMonth, int initialYear) {
+        day = initialDay;
+        month = initialMonth;
+        year = initialYear;
+    }
+
     String formatData () {
-        return String.format("Is data: %d/%d/%d", year, month, day);
+        return String.format("Is data: %d/%d/%d", day, month, year);
     }
 }

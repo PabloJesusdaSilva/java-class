@@ -9,13 +9,13 @@ public class DataTest {
         data.month = 11;
         data.year = 2024;
 
-        System.out.printf("Is data: %d/%d/%d", data.year, data.month, data.day);
+        System.out.printf(data.formatData());
 
         Data twoData = new Data();
         twoData.day = 27;
         twoData.month = 4;
         twoData.year = 2018;
 
-        System.out.printf("\nIs data: %d/%d/%d", twoData.year, twoData.month, twoData.day);
+        System.out.printf(twoData.formatData());
     }
 }

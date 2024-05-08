@@ -4,14 +4,13 @@ public class Product {
 
     String name;
     double price;
-    double discount;
+    static double discount = 0.25;
 
     Product() {}
 
-    Product(String initialName, double initialPrice, double initialDiscount) {
+    Product(String initialName, double initialPrice) {
         name = initialName;
         price = initialPrice;
-        discount = initialDiscount;
     }
 
     double discountPrice (double managerDiscount) {

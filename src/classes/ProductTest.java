@@ -4,8 +4,8 @@ public class ProductTest {
 
     public static void main(String[] args) {
 
-        Product oneProduct = new Product("MacBook Air3", 23902.39, 0.25);
-        Product secondProduct = new Product("iPhone 15 Pro Max", 6.345, 0.2);
+        Product oneProduct = new Product("MacBook Air3", 23902.39);
+        Product secondProduct = new Product("iPhone 15 Pro Max", 6.345);
 
         //productOne.name = "MacBook Air3";
         //productOne.price = 23902.39;

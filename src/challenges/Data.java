@@ -6,14 +6,12 @@ public class Data {
     public int month;
     public int year;
 
-    Data() {
-        this(1, 1, 1970);
-    }
+    public Data() { this(1, 1, 1970); }
 
-    public  Data (int day, int initialMonth, int initialYear) {
+    public Data (int day, int month, int year) {
         this.day = day;
-        month = initialMonth;
-        year = initialYear;
+        this.month = month;
+        this.year = year;
     }
 
     public String formatData () {

@@ -7,18 +7,18 @@ public class Data {
     public int year;
 
     Data() {
-        day = 1;
-        month = 1;
-        year = 2024;
+        this(1, 1, 1970);
     }
 
-    public  Data (int initialDay, int initialMonth, int initialYear) {
-        day = initialDay;
+    public  Data (int day, int initialMonth, int initialYear) {
+        this.day = day;
         month = initialMonth;
         year = initialYear;
     }
 
     public String formatData () {
-        return String.format("Is data: %d/%d/%d", day, month, year);
+        final String formatString = "Is data: %d/%d/%d";
+
+        return String.format(formatString, this.day, month, year);
     }
 }

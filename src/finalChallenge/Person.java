@@ -1,4 +1,4 @@
-package FinalChallenge;
+package finalChallenge;
 
 public class Person {
 

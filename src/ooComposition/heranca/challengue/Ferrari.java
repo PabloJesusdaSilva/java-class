@@ -2,9 +2,10 @@ package ooComposition.heranca.challengue;
 
 public class Ferrari extends Car {
 
-    @Override
-    void speedUp() { currentSpeed += 15; }
+    Ferrari() { this(315); }
 
-    @Override
-    void brake() { currentSpeed -= 15; }
+    Ferrari(int maximumSpeed) {
+        super(maximumSpeed);
+        delta = 15;
+    }
 }

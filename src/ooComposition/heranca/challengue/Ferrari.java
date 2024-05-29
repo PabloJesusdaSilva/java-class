@@ -1,15 +1,10 @@
 package ooComposition.heranca.challengue;
 
 public class Ferrari extends Car {
-    boolean speedUp() {
-        currentSpeed += 10;
 
-        return true;
-    }
+    @Override
+    void speedUp() { currentSpeed += 15; }
 
-    boolean brake() {
-        currentSpeed -= 10;
-
-        return true;
-    }
+    @Override
+    void brake() { currentSpeed -= 15; }
 }

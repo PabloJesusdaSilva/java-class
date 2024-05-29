@@ -4,19 +4,19 @@ public class Car {
 
     int currentSpeed;
 
-    boolean speedUp() {
+    void speedUp() {
         currentSpeed += 5;
-
-        return true;
     }
 
-    boolean brake() {
+    void brake() {
         if(currentSpeed >= 5) {
             currentSpeed -= 5;
         } else {
             currentSpeed = 0;
         }
+    }
 
-        return true;
+    public String toString() {
+        return "Current speed: " + currentSpeed + "km/h";
     }
 }

@@ -5,27 +5,25 @@ public class CarTest {
     public static void main(String[] args) {
 
         Car civic = new Civic();
-        Car ferrari = new Ferrari();
-
-        System.out.println("Velocidae atual: " + civic.currentSpeed);
-        System.out.println("Velocidae atual: " + ferrari.currentSpeed);
 
         civic.speedUp();
-        ferrari.speedUp();
-
-        System.out.println("Velocidae atual: " + civic.currentSpeed);
-        System.out.println("Velocidae atual: " + ferrari.currentSpeed);
+        System.out.println(civic);
 
         civic.speedUp();
-        ferrari.speedUp();
-
-        System.out.println("Velocidae atual: " + civic.currentSpeed);
-        System.out.println("Velocidae atual: " + ferrari.currentSpeed);
+        System.out.println(civic);
 
         civic.brake();
-        ferrari.brake();
+        System.out.println(civic);
 
-        System.out.println("Velocidae atual: " + civic.currentSpeed);
-        System.out.println("Velocidae atual: " + ferrari.currentSpeed);
+        Car ferrari = new Ferrari();
+        
+        ferrari.speedUp();
+        System.out.println(ferrari);
+
+        ferrari.speedUp();
+        System.out.println(ferrari);
+
+        ferrari.brake();
+        System.out.println(ferrari);
     }
 }

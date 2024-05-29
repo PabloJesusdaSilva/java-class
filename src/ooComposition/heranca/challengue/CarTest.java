@@ -16,7 +16,7 @@ public class CarTest {
         System.out.println(civic);
 
         Car ferrari = new Ferrari();
-        
+
         ferrari.speedUp();
         System.out.println(ferrari);
 

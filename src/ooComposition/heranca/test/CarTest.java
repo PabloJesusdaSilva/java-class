@@ -1,4 +1,8 @@
-package ooComposition.heranca.challengue;
+package ooComposition.heranca.test;
+
+import ooComposition.heranca.challengue.Car;
+import ooComposition.heranca.challengue.Civic;
+import ooComposition.heranca.challengue.Ferrari;
 
 public class CarTest {
 

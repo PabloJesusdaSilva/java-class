@@ -2,15 +2,15 @@ package ooComposition.heranca.challengue;
 
 public class Car {
 
-    final int MAXIMUM_SPEED;
-    int currentSpeed;
-    int delta = 5;
+    public final int MAXIMUM_SPEED;
+    protected int currentSpeed;
+    protected int delta = 5;
 
     Car(int maximumSpeed) {
         MAXIMUM_SPEED = maximumSpeed;
     }
 
-    void speedUp() {
+    public void speedUp() {
         if(currentSpeed + delta > MAXIMUM_SPEED) {
             currentSpeed = MAXIMUM_SPEED;
         } else {
@@ -18,7 +18,7 @@ public class Car {
         }
     }
 
-    void brake() {
+    public void brake() {
         if(currentSpeed >= 5) {
             currentSpeed -= 5;
         } else {

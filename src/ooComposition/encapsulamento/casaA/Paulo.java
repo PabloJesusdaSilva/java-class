@@ -1,7 +1,7 @@
 package ooComposition.encapsulamento.casaA;
 
 public class Paulo {
-    
+
     void test() {
         Ana wife = new Ana();
 

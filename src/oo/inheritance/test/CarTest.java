@@ -19,7 +19,9 @@ public class CarTest {
         civic.brake();
         System.out.println(civic);
 
-        Car ferrari = new Ferrari(350);
+        Ferrari ferrari = new Ferrari(350);
+        ferrari.turnOnTurbo();
+        ferrari.turnOnAirConditioning();
 
         ferrari.speedUp();
         System.out.println(ferrari);

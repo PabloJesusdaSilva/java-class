@@ -4,17 +4,17 @@ public class Car {
 
     public final int MAXIMUM_SPEED;
     protected int currentSpeed;
-    protected int delta = 5;
+    private int delta = 5;
 
     Car(int maximumSpeed) {
         MAXIMUM_SPEED = maximumSpeed;
     }
 
     public void speedUp() {
-        if(currentSpeed + delta > MAXIMUM_SPEED) {
+        if(currentSpeed + getDelta() > MAXIMUM_SPEED) {
             currentSpeed = MAXIMUM_SPEED;
         } else {
-            currentSpeed += delta;
+            currentSpeed += getDelta();
         }
     }
 
@@ -28,5 +28,13 @@ public class Car {
 
     public String toString() {
         return "Current speed: " + currentSpeed + "km/h";
+    }
+
+    public int getDelta() {
+        return delta;
+    }
+
+    public void setDelta(int delta) {
+        this.delta = delta;
     }
 }

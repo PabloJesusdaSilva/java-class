@@ -25,6 +25,7 @@ public class CarTest {
 
         ferrari.speedUp();
         System.out.println(ferrari);
+        System.out.println(ferrari.airSpeed());
 
         ferrari.speedUp();
         System.out.println(ferrari);

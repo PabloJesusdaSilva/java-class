@@ -9,5 +9,8 @@ public class CalcTest2 {
 
         calc = (x, y) -> x * y;
         System.out.println(calc.toExecuted(2, 3 ));
+        System.out.println(calc.test());
+        System.out.println(Calc.hello());
+
     }
 }

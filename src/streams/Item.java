@@ -2,13 +2,15 @@ package streams;
 
 public class Item {
 
-    String name;
-    boolean critical;
-    boolean lowStock;
+    final String name;
+    final double price;
+    final double discount;
+    final double freight;
 
-    public Item (String name, boolean critical, boolean lowStock){
+    public Item (String name, double price, double discount, double freight){
         this.name = name;
-        this.lowStock = lowStock;
-        this.critical = critical;
+        this.price = price;
+        this.discount = discount;
+        this.freight = freight;
     }
 }
